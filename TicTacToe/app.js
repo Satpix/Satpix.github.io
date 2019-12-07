@@ -64,8 +64,6 @@ function winner(){
 				s+=1;
 			}
 		}
-		console.log('s'+s);
-		console.log('f'+f);
 		if (f==3){
 			counter1+=1;
 			scores1();
