@@ -66,10 +66,12 @@ function winner(){
 		}
 		if (f==3){
 			counter1+=1;
-			scores1();
 			localStorage.setItem('counter1',counter1);
 			if (gran==1){
 				counter1=0;
+			}
+			else{
+			scores1();	
 			}
 			if (counter1<5){	
 				reset();	
@@ -82,9 +84,11 @@ function winner(){
 		}
 		if (s==3){
 			counter2+=1;
-			scores2();
 			if (gran==1){
 				counter2=0;
+			}
+			else{
+			scores2();	
 			}
 			localStorage.setItem('counter2',counter2);
 			if (counter2<5){	
