@@ -28,13 +28,13 @@ function buttons(a,r,p,btn){
 	a.onclick=function() {
 		if (btn==1){
 			if (cross==1){
-				document.getElementById(r).style.backgroundImage='url(/img/cross.png';
+				document.getElementById(r).style.backgroundImage='url(/img/cross.png)';
 				first.push(p);
 				cross=0;
 				fill+=1;
 			}
 			else{
-				document.getElementById(r).style.backgroundImage='url(img/circle.png';
+				document.getElementById(r).style.backgroundImage='url(img/circle.png)';
 				second.push(p);
 				cross=1;
 				fill+=1;
