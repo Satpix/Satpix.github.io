@@ -28,7 +28,7 @@ function buttons(a,r,p,btn){
 	a.onclick=function() {
 		if (btn==1){
 			if (cross==1){
-				document.getElementById(r).style.backgroundImage='url(/img/cross1.png)';
+				document.getElementById(r).style.backgroundImage='url(img/cross.png)';
 				first.push(p);
 				cross=0;
 				fill+=1;
