@@ -137,7 +137,7 @@ a{
 	margin-left: -4px;
 }
 #project1{
-	background-image: url(../img/meteorite.png);
+	background-image: url(../img/Meteorite.png);
 	display: block;
 	min-width: 850px;
 	min-height:  400px;
@@ -145,7 +145,7 @@ a{
 	max-height: 400px;
 }
 #project2{
-	background-image: url(../img/tictactoe.png);
+	background-image: url(../img/TicTacToe.png);
 	display: block;
 	min-width: 850px;
 	min-height:  400px;
@@ -156,7 +156,7 @@ a{
 	background-size: cover;
 }
 #project3{
-	background-image: url(../img/photoeditor.png);
+	background-image: url(../img/Photoeditor.png);
 	display: block;
 	min-width: 100%;
 	min-height:  400px;
