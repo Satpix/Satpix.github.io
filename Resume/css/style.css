@@ -156,15 +156,11 @@ a{
 	background-size: cover;
 }
 #project3{
-	background-image: url(../img/photoeditor.png);
-	display: block;
-	min-width: 850px;
-	min-height:  400px;
-	max-width: 850px;
-	max-height: 400px;
-	background-position: center;
+	background-image: url(../img/rez.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+	min-height:  400px;
 }
 #project4{
 	background: linear-gradient(90deg,#05325D, #40e0f2);
