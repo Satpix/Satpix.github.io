@@ -20,12 +20,8 @@
 	width: 75%;
 }
 .img_ava{
-	min-width: 220px;
-	min-height: 220px;
-	max-width: 220px;
-	max-height: 220px;
 	border-radius:150px ;
-	background-image: url(../img/fon_down.jpg);
+	background-image: url(../img/rez.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -33,6 +29,10 @@
 	border: solid 0.5px rgba(0,0,0,0.6);
 	box-shadow:5px 5px 5px rgba(0,0,0,0.4);
 	margin-top: 50px;
+	min-width: 220px;
+	min-height: 220px;
+	max-width: 220px;
+	max-height: 220px;
 
 }
 .title{
@@ -156,53 +156,54 @@ div{
 	font-size: 18px;
 }
 .hphone::before{
-  content: "";
-  background-image: url(../img/phone.png);
-  background-size: cover;
-  height: 22px;
-  width: 22px;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: middle;
+	content: "";
+	background-image: url(../img/phone.png);
+	background-size: cover;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .hemail::before{
-  content: "";
-  background-image: url(../img/gmail.png);
-  background-size: cover;
-  height: 22px;
-  width: 22px;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: middle;
+	content: "";
+	background-image: url(../img/gmail.png);
+	background-size: cover;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .linkedin::before{
-  content: "";
-  background-image: url(../img/linkedin.png);
-  background-size: cover;
-  height: 22px;
-  width: 22px;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: middle;
+	content: "";
+	background-image: url(../img/linkedin.png);
+	background-size: cover;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .vk::before{
-  content: "";
-  background-image: url(../img/vk.png);
-  background-size: cover;
-  height: 22px;
-  width: 22px;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: middle;
+	content: "";
+	background-image: url(../img/vk.png);
+	background-size: cover;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .github::before{
-  content: "";
-  background-image: url(../img/git.png);
-  background-size: cover;
-  height: 22px;
-  width: 22px;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: middle;
+	content: "";
+	background-image: url(../img/git.png);
+	background-size: cover;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.img_size{
+	min-width: 100%;
+	min-height:  400px;
+	max-width: 100%; 
+	max-height: 400px;
+}
+.logo_size::before{
+	min-height: 22px;
+	min-width: 22px;
+
 }
 
