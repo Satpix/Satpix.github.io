@@ -139,18 +139,34 @@ a{
 #project1{
 	background-image: url(../img/meteorite.png);
 	display: none;
+	min-width: 100%;
+	min-height:  400px;
+	max-width: 100%; 
+	max-height: 400px;
 }
 #project2{
 	background-image: url(../img/tictactoe.png);
 	display: none;
+	min-width: 100%;
+	min-height:  400px;
+	max-width: 100%; 
+	max-height: 400px;
 }
 #project3{
 	background-image: url(../img/photoeditor.png);
 	display: none;
+	min-width: 100%;
+	min-height:  400px;
+	max-width: 100%; 
+	max-height: 400px;
 }
 #project4{
 	background: linear-gradient(90deg,#05325D, #40e0f2);
 	display: block;
+	min-width: 100%;
+	min-height:  400px;
+	max-width: 100%; 
+	max-height: 400px;
 }
 div{
 	font-size: 18px;
@@ -162,6 +178,10 @@ div{
 	margin-right: 5px;
 	display: inline-block;
 	vertical-align: middle;
+	min-height: 22px;
+	min-width: 22px;
+	max-width: 22px;
+	max-height: 22px;
 }
 .hemail::before{
 	content: "";
@@ -170,6 +190,11 @@ div{
 	margin-right: 5px;
 	display: inline-block;
 	vertical-align: middle;
+	min-height: 22px;
+	min-width: 22px;
+	max-width: 22px;
+	max-height: 22px;
+
 }
 .linkedin::before{
 	content: "";
@@ -178,6 +203,10 @@ div{
 	margin-right: 5px;
 	display: inline-block;
 	vertical-align: middle;
+	min-height: 22px;
+	min-width: 22px;
+	max-width: 22px;
+	max-height: 22px;
 }
 .vk::before{
 	content: "";
@@ -186,6 +215,10 @@ div{
 	margin-right: 5px;
 	display: inline-block;
 	vertical-align: middle;
+	min-height: 22px;
+	min-width: 22px;
+	max-width: 22px;
+	max-height: 22px;
 }
 .github::before{
 	content: "";
@@ -194,17 +227,12 @@ div{
 	margin-right: 5px;
 	display: inline-block;
 	vertical-align: middle;
-}
-.img_size{
-	min-width: 100%;
-	min-height:  400px;
-	max-width: 100%; 
-	max-height: 400px;
-}
-.logo_size::before{
 	min-height: 22px;
 	min-width: 22px;
 	max-width: 22px;
 	max-height: 22px;
 }
+}
+
+
 
