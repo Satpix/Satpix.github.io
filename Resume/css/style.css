@@ -204,6 +204,7 @@ div{
 .logo_size::before{
 	min-height: 22px;
 	min-width: 22px;
-
+	max-width: 22px;
+	max-height: 22px;
 }
 
