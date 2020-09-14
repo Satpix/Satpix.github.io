@@ -20,8 +20,10 @@
 	width: 75%;
 }
 .img_ava{
-	width: 220px;
-	height: 220px;
+	min-width: 220px;
+	min-height: 220px;
+	max-width: 220px;
+	max-height: 220px;
 	border-radius:150px ;
 	background-image: url(../img/fon_down.jpg);
 	background-position: center;
