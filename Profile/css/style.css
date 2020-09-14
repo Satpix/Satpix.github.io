@@ -138,18 +138,18 @@ a{
 }
 #project1{
 	background-image: url(../img/Meteorite.png);
-	display: block;
-	min-width: 850px;
+	display: none;
+	min-width: 100%;
 	min-height:  400px;
-	max-width: 850px;
+	max-width: 100%;
 	max-height: 400px;
 }
 #project2{
 	background-image: url(../img/TicTacToe.png);
-	display: block;
-	min-width: 850px;
+	display: none;
+	min-width: 100%;
 	min-height:  400px;
-	max-width: 850px;
+	max-width: 100%;
 	max-height: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -157,7 +157,7 @@ a{
 }
 #project3{
 	background-image: url(../img/Photoeditor.png);
-	display: block;
+	display: none;
 	min-width: 100%;
 	min-height:  400px;
 	max-width: 100%;
