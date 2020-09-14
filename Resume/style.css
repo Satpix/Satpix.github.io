@@ -1,0 +1,206 @@
+.hcontainer{
+	max-width: 1170px;
+	margin:0 auto;
+	padding: 0 15px;
+}
+.rel_page{
+	display: flex;
+}
+.block1{
+	position: relative;
+	height: 1400px;
+	background: linear-gradient(90deg,#05325D, #40e0f2 );
+	/*background-color:#008382;*/
+	width: 25%;
+}
+.block2{
+	position: relative;
+	background-color: white;
+	height: 1400px;
+	width: 75%;
+}
+.img_ava{
+	width: 220px;
+	height: 220px;
+	border-radius:150px ;
+	background-image: url(/img/rez.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	border: solid 0.5px rgba(0,0,0,0.6);
+	box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+	margin-top: 50px;
+
+}
+.title{
+	font-size: 46px;
+	letter-spacing: 2px;
+	margin-top: 50px;	
+	width: 100px;
+	color: #1293AD;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+}
+.text{
+	margin-top: 20px;
+	font-size: 20px;
+	border-bottom: solid 2px black ;
+
+}
+.margin_block2{
+	padding-left: 20px;
+}
+.contacts{
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 20px;
+	width: 60%;
+	background-color: rgba(255,255,255,0.5);	
+	box-shadow:5px 5px 5px rgba(0,0,0,0.6);
+}
+.title_contacts{
+	font-size: 26px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-bottom: solid 2px black;
+	margin-bottom: 20px;
+	letter-spacing:2px;
+
+}
+a{
+	text-decoration: none;
+	color: black;
+	line-height: 26px;
+}
+.title_profile{
+	font-size: 26px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	margin-bottom: 20px;
+	margin-top: 50px;
+	letter-spacing: 2px;
+	color: white;
+	padding: 5px;
+	background: linear-gradient(90deg,#05325D, #40e0f2);
+	margin-left: -5px;
+
+
+
+}
+.text1_education{
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 2px;
+}
+.bold{
+	font-weight: bold;
+}
+.text_button{
+	display: flex;
+	justify-content: space-between;
+}
+.buttons{
+	position: relative;
+	text-align: center;
+	width: 33%;
+	height: 40px;
+	font-size: 30px;
+	background: linear-gradient(90deg,#05325D, #40e0f2);	
+	color: white;
+	box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+	margin-left: -5px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+
+}
+
+#button1:hover{
+	background: #1293AD;
+}
+#button2:hover{
+	background: #1293AD;
+}
+#button3:hover{
+	background: #1293AD;
+}
+
+.projects{
+	width: 100%;
+	height: 400px;
+	border: solid 1px black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	border: solid 2px rgba(0,132,130,1);
+	margin-top:10px;
+	margin-left: -4px;
+}
+#project1{
+	background-image: url(/img/meteorite.png);
+	display: none;
+}
+#project2{
+	background-image: url(/img/tictactoe.png);
+	display: none;
+}
+#project3{
+	background-image: url(/img/photoeditor.png);
+	display: none;
+}
+#project4{
+	background: linear-gradient(90deg,#05325D, #40e0f2);
+	display: block;
+}
+div{
+	font-size: 18px;
+}
+.hphone::before{
+  content: "";
+  background-image: url(/img/phone.png);
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hemail::before{
+  content: "";
+  background-image: url(/img/gmail.png);
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.linkedin::before{
+  content: "";
+  background-image: url(/img/linkedin.png);
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.vk::before{
+  content: "";
+  background-image: url(/img/vk.png);
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.github::before{
+  content: "";
+  background-image: url(/img/git.png);
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
