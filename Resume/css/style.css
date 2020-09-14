@@ -151,6 +151,9 @@ a{
 	min-height:  400px;
 	max-width: 850px;
 	max-height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #project3{
 	background-image: url(../img/photoeditor.png);
@@ -159,6 +162,9 @@ a{
 	min-height:  400px;
 	max-width: 850px;
 	max-height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #project4{
 	background: linear-gradient(90deg,#05325D, #40e0f2);
@@ -167,6 +173,9 @@ a{
 	min-height:  400px;
 	max-width: 100%; 
 	max-height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 div{
 	font-size: 18px;
