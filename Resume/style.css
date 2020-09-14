@@ -23,7 +23,7 @@
 	width: 220px;
 	height: 220px;
 	border-radius:150px ;
-	background-image: url(/img/rez.jpg);
+	background-image: url(../img/rez.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -135,15 +135,15 @@ a{
 	margin-left: -4px;
 }
 #project1{
-	background-image: url(/img/meteorite.png);
+	background-image: url(../img/meteorite.png);
 	display: none;
 }
 #project2{
-	background-image: url(/img/tictactoe.png);
+	background-image: url(../img/tictactoe.png);
 	display: none;
 }
 #project3{
-	background-image: url(/img/photoeditor.png);
+	background-image: url(../img/photoeditor.png);
 	display: none;
 }
 #project4{
@@ -155,7 +155,7 @@ div{
 }
 .hphone::before{
   content: "";
-  background-image: url(/img/phone.png);
+  background-image: url(../img/phone.png);
   background-size: cover;
   height: 22px;
   width: 22px;
@@ -165,7 +165,7 @@ div{
 }
 .hemail::before{
   content: "";
-  background-image: url(/img/gmail.png);
+  background-image: url(../img/gmail.png);
   background-size: cover;
   height: 22px;
   width: 22px;
@@ -175,7 +175,7 @@ div{
 }
 .linkedin::before{
   content: "";
-  background-image: url(/img/linkedin.png);
+  background-image: url(../img/linkedin.png);
   background-size: cover;
   height: 22px;
   width: 22px;
@@ -185,7 +185,7 @@ div{
 }
 .vk::before{
   content: "";
-  background-image: url(/img/vk.png);
+  background-image: url(../img/vk.png);
   background-size: cover;
   height: 22px;
   width: 22px;
@@ -195,7 +195,7 @@ div{
 }
 .github::before{
   content: "";
-  background-image: url(/img/git.png);
+  background-image: url(../img/git.png);
   background-size: cover;
   height: 22px;
   width: 22px;
