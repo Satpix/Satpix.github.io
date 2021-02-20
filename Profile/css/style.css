@@ -1,23 +1,28 @@
+@media (max-width: 900px) {
+	body {
+		font-size: 30px;
+	}
+}
 .hcontainer{
-	max-width: 1170px;
+	max-width: 1024px;
 	margin:0 auto;
 	padding: 0 15px;
 }
 .rel_page{
 	display: flex;
+	justify-content: space-between;
 }
 .block1{
 	position: relative;
 	height: 1400px;
 	background: linear-gradient(90deg,#05325D, #40e0f2 );
 	/*background-color:#008382;*/
-	width: 25%;
+
 }
 .block2{
 	position: relative;
 	background-color: white;
 	height: 1400px;
-	width: 75%;
 }
 .img_ava{
 	border-radius:150px ;
@@ -33,6 +38,7 @@
 	min-height: 220px;
 	max-width: 220px;
 	max-height: 220px;
+	margin: 30px 20px 30px 20px;
 
 }
 .title{
@@ -104,13 +110,13 @@ a{
 	position: relative;
 	text-align: center;
 	width: 33%;
-	height: 40px;
-	font-size: 30px;
 	background: linear-gradient(90deg,#05325D, #40e0f2);	
 	color: white;
 	box-shadow:5px 5px 5px rgba(0,0,0,0.4);
 	margin-left: -5px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+	font-size: 30px;
+
 
 }
 
@@ -241,7 +247,23 @@ div{
 	max-width: 22px;
 	max-height: 22px;
 }
-
+@media screen and (max-width: 799px) {
+	.buttons{
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.buttons{
+		font-size: 10px;
+		padding: 10px;
+	}
+}
+.check{
+	text-decoration: underline;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+}
 
 
 
