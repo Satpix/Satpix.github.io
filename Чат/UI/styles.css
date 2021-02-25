@@ -1,0 +1,616 @@
+@font-face {
+    font-family: "Roboto Light";
+    src: url("/assets/fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-blue-color: #249EA4;
+    --main-darkblue-color: #0E5A7B;
+    --main-pink-color: #FABD98;
+    --main-white-color: #FFFFFF;
+    --main-black-color: #000000;
+    --main-brown-color: #BFBA91;
+    --main-pink-gradient: linear-gradient(180deg, #FABD98 0%, #DDDDDD 100%);
+    --main-blue-gradient: linear-gradient(180deg, #249EA4 0%, #DDDDDD 100%);
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Roboto Light", sans-serif;
+}
+
+/*16px = 1.15rm
+12px=0.85rm
+5px=0.35rm
+10px=0.7rm
+*/
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main-darkblue-color);
+}
+
+.hidden{
+    display: none;
+}
+.header-container {
+    display: flex;
+    margin: 0 auto;
+    background-color: var(--main-blue-color);
+
+}
+
+.logo {
+    position: relative;
+    background-image: url(../assets/img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 7rem;
+    width: 32rem;
+    margin: 0 auto;
+}
+
+.header-button {
+    position: relative;
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--main-pink-color);
+    border: 0;
+}
+
+.header-button:hover {
+    background-color: var(--main-brown-color);
+    cursor: pointer;
+}
+
+.buttons {
+    position: relative;
+    padding-top: 0.5rem;
+    min-width: 12rem;
+    margin-right: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message-container {
+    margin: 0 auto;
+    background-color: var(--main-blue-color);
+    display: flex;
+}
+
+.contacts {
+    position: relative;
+    max-width: 25rem;
+    border: 0.24rem solid var(--main-blue-color);
+}
+
+.contacts-title {
+    color: var(--main-white-color);
+    font-size: 1.15rem;
+    padding-left: 1.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.contacts-filter {
+    background-color: var(--main-white-color);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--main-blue-color);
+    align-items: center;
+}
+
+.contacts-filter-input {
+    height: 2.5rem;
+    width: 19.5rem;
+    border: 0.07rem solid var(--main-blue-color);
+}
+
+.contacts-filter-button {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--main-white-color);
+    border: 0.07rem solid var(--main-blue-color);
+    border-right: none;
+    background: url('https://api.iconify.design/ion:search-outline.svg?color=%23249EA4') no-repeat center center / contain;
+    color: var(--main-blue-color);
+}
+
+.contacts-filter-button {
+    cursor: pointer;
+}
+
+.contacts-chatlist {
+    overflow: auto;
+    max-height: 46rem;
+    background-color: var(--main-white-color);
+    border: 1px solid var(--main-blue-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contacts-person {
+    width: 22rem;
+    height: 4rem;
+    background-color: var(--main-pink-color);
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts-person:hover {
+    background-color: var(--main-brown-color);
+}
+
+.contacts-person-text {
+    position: relative;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+.contacts-person-text::before {
+    content: url('https://api.iconify.design/ion:person-circle-outline.svg?width=2rem&height=2rem');
+    position: absolute;
+    left: 0;
+    top: -0.7rem;
+    padding-left: 0.5rem;
+}
+
+.contacts-dialog-text::before {
+    content: url('https://api.iconify.design/ion:chatbubbles-outline.svg?width=2rem&height=2rem');
+}
+
+.messages {
+    position: relative;
+    width: 150rem;
+    height: 50rem;
+    border: 0.24rem solid var(--main-blue-color);
+}
+
+.messages-title {
+    color: var(--main-white-color);
+    font-size: 1.15rem;
+    padding-left: 1.7rem;
+    padding-bottom: 0.2rem;
+}
+
+.messages-filters {
+    background-color: var(--main-white-color);
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid var(--main-blue-color);
+    align-items: center;
+}
+
+.messages-filter {
+    position: relative;
+    display: flex;
+}
+
+.messages-filter-inputs {
+    position: relative;
+    height: 2.5rem;
+    width: 19.5rem;
+    border: 0.07rem solid var(--main-blue-color);
+    box-sizing: border-box;
+}
+
+.messages-filter-buttons {
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--main-white-color);
+    background: url('https://api.iconify.design/ion:search-outline.svg?color=%23249EA4') no-repeat center center / contain;
+    border: 0.07rem solid var(--main-blue-color);
+    border-right: none;
+}
+
+.messages-filter-buttons:hover {
+    cursor: pointer;
+}
+
+.messages-text {
+    height: 46rem;
+    background-color: var(--main-white-color);
+    border: 1px solid var(--main-blue-color);
+}
+
+.messages-text-input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.messages-text-textarea {
+    position: relative;
+    border: 0.07rem solid var(--main-blue-color);
+    background: var(--main-pink-gradient);
+    width: 40rem;
+    height: 4rem;
+    font-family: "Roboto Light", sans-serif;
+    box-sizing: border-box;
+}
+
+.messages-text-button {
+    position: relative;
+    color: var(--main-white-color);
+    background-color: var(--main-blue-color);
+    width: 10rem;
+    height: 4rem;
+    font-family: "Roboto Light", sans-serif;
+    border: none;
+}
+
+.messages-text-button:hover {
+    background-color: var(--main-darkblue-color);
+}
+
+textarea[placeholder] {
+    color: black;
+    font-size: 1.2rem;
+    padding-top: 1.1rem;
+    padding-left: 1.1rem;
+    line-height: 1.2rem;
+}
+
+input[placeholder] {
+    padding-left: 0.5rem;
+}
+
+input[type=datetime-local] {
+}
+
+.messages-button-load {
+    position: absolute;
+    width: 13rem;
+    height: 2.2rem;
+    color: var(--main-white-color);
+    background: var(--main-blue-color);
+    z-index: 1;
+    border: 0.07rem solid black;
+    align-self: center;
+}
+
+.messages-chat-container {
+    overflow: auto;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-mymessage {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    background: var(--main-pink-gradient);
+    width: 42rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    transition: 0.5s;
+    align-self: flex-end;
+    margin-right: 2rem;
+}
+
+.messages-chatmessages {
+    position: relative;
+    width: 42rem;
+    background: var(--main-blue-gradient);
+    padding: 1rem;
+    margin: 1rem 0rem;
+    text-align: justify;
+    align-self: flex-start;
+    margin-left: 2rem;
+
+}
+.messages-mymessage-container{
+    width:100%;
+}
+.messages-mymessage-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.messages-mymessage-title-login {
+    position: relative;
+}
+
+.messages-mymessage-title-login:hover {
+    color: var(--main-white-color);
+    cursor: pointer;
+}
+
+.messages-mymessage-title-login::before {
+    content: url('https://api.iconify.design/ion:person-circle-outline.svg?width=1.2rem&height=1.2rem');
+    padding-right: 0.2rem;
+    vertical-align: -0.3rem;
+}
+
+.messages-mymessage-title-time {
+    position: relative;
+}
+
+.messages-mymessage-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.messages-edit {
+    border:none;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url('https://api.iconify.design/ion:pencil-outline.svg?color=%23249EA4&width=1.7rem&height=1.7rem') no-repeat center center;
+}
+
+.messages-edit:hover {
+    background: url('https://api.iconify.design/ion:pencil-outline.svg?color=%230E5A7B&width=1.7rem&height=1.7rem') no-repeat center center;
+}
+
+.messages-delete {
+    border:none;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url('https://api.iconify.design/ion:trash-outline.svg?color=%23249EA4&width=1.7rem&height=1.7rem') no-repeat center center;
+}
+
+.messages-delete:hover {
+    background: url('https://api.iconify.design/ion:trash-outline.svg?color=%230E5A7B&width=1.7rem&height=1.7rem') no-repeat center center;
+}
+
+.footer-container {
+    margin: 0 auto;
+    background-color: var(--main-blue-color);
+    color: var(--main-white-color);
+    text-align: center;
+    height: 6.5rem;
+}
+
+.footer-mail {
+    color: var(--main-pink-color);
+}
+
+.footer-text {
+    padding-top: 3.3rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .messages-filter-inputs {
+        width: 17rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .messages-filter-inputs {
+        width: 14rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .messages-filter-inputs {
+        width: 12rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .messages-text-textarea {
+        width: 30rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .messages-filter-inputs {
+        width: 10rem;
+        transition: 0.5s;
+    }
+
+    .messages-mymessage {
+        width: 34rem;
+    }
+
+    .messages-chatmessages {
+        width: 34rem;
+    }
+
+    .messages-text-textarea {
+        width: 25rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .contacts-filter-input {
+        width: 13rem;
+        transition: 0.5s;
+    }
+
+    .contacts-person {
+        width: 16rem;
+        transition: 0.5s;
+    }
+
+    .messages-mymessage {
+        width: 30rem;
+    }
+
+    .messages-chatmessages {
+        width: 30rem;
+    }
+
+    .contacts-person-text {
+        font-size: 0.9rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contacts-filter-input {
+        width: 10rem;
+        transition: 0.5s;
+    }
+
+    .contacts-person {
+        width: 13rem;
+        transition: 0.5s;
+    }
+
+    .contacts-person-text {
+        font-size: 0.9rem;
+        transition: 0.5s;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .messages-mymessage {
+        margin-right: 0;
+    }
+
+    .messages-chatmessages {
+        margin-left: 0;
+    }
+
+    .messages-chat-container {
+        margin-right: 1.95rem;
+        margin-left: 1.95rem;
+    }
+
+    .messages-text-textarea {
+        width: 18rem;
+        transition: 0.5s;
+    }
+
+    .messages-filters {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 8rem;
+        transition: 0.5s;
+    }
+
+    .messages-filter-buttons {
+        height: 2rem;
+    }
+
+    .messages-filter-inputs {
+        width: 10rem;
+        height: 2rem;
+        transition: 0.5s;
+    }
+
+    .messages-filter {
+        height: 2rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .messages-filter-inputs {
+        width: 27rem;
+        transition: 0.5s;
+    }
+
+    .messages-text {
+        height: 42rem;
+        transition: 0.5s;
+    }
+
+    .messages-chat-container {
+        height: 36rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .messages-mymessage {
+        width: 22rem;
+        transition: 0.5s;
+    }
+
+    .messages-chatmessages {
+        width: 22rem;
+        transition: 0.5s;
+    }
+
+    .messages-text-textarea {
+        width: 15rem;
+        transition: 0.5s;
+    }
+
+    .messages-filter-inputs {
+        width: 20rem;
+        transition: 0.5s;
+    }
+
+    .messages-text-textarea {
+        width: 14rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .messages-mymessage {
+        width: 20rem;
+        transition: 0.5s;
+    }
+
+    .messages-chatmessages {
+        width: 20rem;
+        transition: 0.5s;
+    }
+
+    .messages-text-textarea {
+        width: 12rem;
+        transition: 0.5s;
+    }
+
+    .messages-filter-inputs {
+        width: 13rem;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header-container {
+        width:39.3rem;
+    }
+    .footer-container {
+        width:39.3rem;
+    }
+    .messages {
+        width: 25.4rem;
+    }
+    .messages-text{
+        width: 25.4rem;
+    }
+    .messages-filter{
+        width: 25.4rem;
+    }
+}

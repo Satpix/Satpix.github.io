@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" defer src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="logo">
+
+        </div>
+        <div class="buttons">
+            <button class="header-button" type="button">Авторизация</button>
+            <button class="header-button" type="button">Регистрация</button>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="message-container">
+        <div class="contacts">
+            <div class="contacts-title">
+                Контакты
+            </div>
+            <div class="contacts-filter">
+                <button class="contacts-filter-button" type="button"></button>
+                <input class="contacts-filter-input" type="text" placeholder="filter">
+            </div>
+            <div class="contacts-chatlist">
+                <div class="contacts-person">
+                    <div class="contacts-person-text contacts-dialog-text">Общий чат</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 1</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 2</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 3</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 4</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 5</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 6</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 43</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 123</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 123</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь1324</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Lorem чел</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь 123</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Пользователь1324</div>
+                </div>
+                <div class="contacts-person">
+                    <div class="contacts-person-text">Lorem чел</div>
+                </div>
+            </div>
+        </div>
+        <div class="messages">
+            <div class="messages-title">
+                Сообщения
+            </div>
+            <div class="messages-filters">
+                <div class="messages-filter">
+                    <button class="messages-filter-buttons" type="button"></button>
+                    <input class="messages-filter-inputs" type="text" placeholder="Имя автора">
+                </div>
+                <div class="messages-filter">
+                    <button class="messages-filter-buttons" type="button"></button>
+                    <input class="messages-filter-inputs" type="text" placeholder="Текст сообщения">
+                </div>
+                <div class="messages-filter">
+                    <button class="messages-filter-buttons" type="button"></button>
+                    <input class="messages-filter-inputs" type="datetime-local" placeholder="Дата и время добавления">
+                </div>
+            </div>
+            <div class="messages-text">
+                <div class="messages-chat-container" id="messages-chat-container">
+                    <button class="messages-button-load" id="messages-button-load">
+                        Загрузить ещё
+                    </button>
+                    <!--                    -->
+<!--                    <div class="messages-chatmessages">-->
+<!--                        <div class="messages-mymessage-title">-->
+<!--                            <div class="messages-mymessage-title-login">Пользователь 2</div>-->
+<!--                            <div class="messages-mymessage-title-time">2010-04-02 12:00</div>-->
+<!--                        </div>-->
+<!--                        <div class="messages-mymessage-text">-->
+<!--                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those-->
+<!--                            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are-->
+<!--                            also reproduced in their exact original form, accompanied by English versions from the 1914-->
+<!--                            translation by H. Rackham.-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <!--                    -->
+<!--                    <div class="messages-mymessage">-->
+<!--                        <div class="messages-mymessage-container">-->
+<!--                            <div class="messages-mymessage-title">-->
+<!--                                <div class="messages-mymessage-title-login">Satpix</div>-->
+<!--                                <div class="messages-mymessage-title-time">2010-04-02 12:00</div>-->
+<!--                            </div>-->
+<!--                            <div class="messages-mymessage-text">-->
+<!--                                But who has any right to find fault with a man who chooses to enjoy a pleasure that has-->
+<!--                                no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="messages-mymessage-buttons">-->
+<!--                            <div class="messages-edit"></div>-->
+<!--                            <div class="messages-delete"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <!--                    -->
+                </div>
+                <div class="messages-text-input-container">
+                    <textarea class="messages-text-textarea" id="messages-text-textarea" placeholder="Введите сообщение..."></textarea>
+                    <button class="messages-text-button" id="messages-text-button">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-text">
+            Navchat. Contact us <a href="#" class="footer-mail">kamash19@gmail.com.</a> Last modified: 11.10.2020. Version 2.0.
+            Template by Kamash Akhmed.
+        </div>
+    </div>
+</footer>
+</body>
+</html>
