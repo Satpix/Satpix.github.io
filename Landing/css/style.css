@@ -45,7 +45,6 @@ body{
 	  position: absolute;
 	  left:22px;
 	  color:#1b1b1b;
-
 }
 .hcontacts:after{
 	content: "";
@@ -110,7 +109,7 @@ body{
 	display:none;
 }
 .slider{
-	background-image: url(../img/TicTacToe.png);
+	background-image: url(../img/slider-fon.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -739,6 +738,9 @@ text-shadow:1px 1px 10px black;
 #modal input[type="submit"]{
 	background-color:#0F52BA;
 	border:none;
+}
+.footer_list{
+	margin-left: 300px;
 }
 
 
