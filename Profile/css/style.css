@@ -1,13 +1,32 @@
-@media (max-width: 900px) {
-    body {
-        font-size: 30px;
-    }
+:root {
+    --color-one: linear-gradient(90deg, #403B4A, #86c8dd);
 }
 
-.hcontainer {
+* {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--color-one);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    line-height: 26px;
+}
+
+.container {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .rel_page {
@@ -17,32 +36,31 @@
 
 .block1 {
     position: relative;
-    height: 1400px;
-    background: linear-gradient(90deg, #05325D, #40e0f2);
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+    margin-left:-15px;
 }
 
 .block2 {
     position: relative;
     background-color: white;
-    height: 1400px;
+    padding-right: 15px;
+    padding-bottom:10px;
+    border-radius: 0px 10px 10px 0px;
+    margin-bottom: 10px;
 }
 
 .img_ava {
     border-radius: 150px;
     background-image: url(../img/rez.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 auto;
-    border: solid 0.5px rgba(0, 0, 0, 0.6);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    margin-top: 50px;
-    min-width: 220px;
-    min-height: 220px;
-    max-width: 220px;
-    max-height: 220px;
+    box-shadow: 3px 3px 10px #403B4A;
+    width: 200px;
+    height: 200px;
     margin: 30px 20px 30px 20px;
-
 }
 
 .title {
@@ -50,15 +68,14 @@
     letter-spacing: 2px;
     margin-top: 50px;
     width: 100px;
-    color: #1293AD;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    color: #403B4A;
+    text-shadow: 2px 2px 2px #403B4A;
 }
 
 .text {
     margin-top: 20px;
     font-size: 20px;
     border-bottom: solid 2px black;
-
 }
 
 .margin_block2 {
@@ -70,35 +87,40 @@
     margin-top: 50px;
     padding: 20px;
     width: 60%;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    background: var(--color-one);
+    box-shadow: 3px 3px 10px #403B4A;
+    border-radius: 5px;
+    color: white;
 }
 
 .title_contacts {
     font-size: 26px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px #403B4A;
     border-bottom: solid 2px black;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    line-height: 26px;
+.text_contacts ul {
+    margin-left: -40px;
+    list-style: none;
+}
+
+.phone {
+    font-size: 17px;
+    margin-bottom: -2px;
 }
 
 .title_profile {
     font-size: 26px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
-    margin-top: 50px;
+    text-shadow: 2px 2px 2px #403B4A;
     letter-spacing: 2px;
     color: white;
-    padding: 5px;
-    background: linear-gradient(90deg, #05325D, #40e0f2);
-    margin-left: -5px;
-    padding-left: 20px;
+    padding: 5px 5px 5px 20px;
+    background: var(--color-one);
+    margin: 50px 0 10px -5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #403B4A;
 }
 
 .text1_education {
@@ -106,10 +128,6 @@ a {
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 2px;
-}
-
-.bold {
-    font-weight: bold;
 }
 
 .text_button {
@@ -121,34 +139,29 @@ a {
 .buttons {
     position: relative;
     text-align: center;
-    padding:0 30px;
-    background: linear-gradient(90deg, #05325D, #40e0f2);
+    padding: 0 30px;
+    background: var(--color-one);
     color: white;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-    margin:10px 5px 0px 0px;
+    box-shadow: 1px 1px 5px #403B4A;
+    margin: 10px 5px 0px 0px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     font-size: 30px;
-    border-radius: 20%;
+    border-radius: 3px;
+    transition: 1s;
 }
 
 .buttons:hover {
-    background: #1293AD;
+    background: #403B4A;
 }
 
-
 .projects {
-    min-width: 100%;
-    min-height: 400px;
-    max-width: 100%;
-    max-height: 400px;
-    border: solid 1px black;
-    background-position: center;
+    width: 100%;
+    padding-bottom: 51.2%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 auto;
-    border: solid 2px rgba(0, 132, 130, 1);
+    background-position: center;
     margin-top: 10px;
-    margin-left: -4px;
+    box-shadow: 3px 3px 10px #403B4A;
 }
 
 #project1 {
@@ -172,85 +185,38 @@ a {
 }
 
 #project {
-    background: linear-gradient(90deg, #05325D, #40e0f2);
+    background: var(--color-one);
     display: block;
-    min-width: 100%;
-    min-height: 400px;
-    max-width: 100%;
-    max-height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-div {
-    font-size: 18px;
-}
-
-.hphone::before {
+.links::before {
     content: "";
+    background-size: cover;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 22px;
+    width: 22px;
+}
+
+.phone::before {
     background-image: url(../img/phone.png);
-    background-size: cover;
-    margin-right: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    min-height: 22px;
-    min-width: 22px;
-    max-width: 22px;
-    max-height: 22px;
 }
 
-.hemail::before {
-    content: "";
+.email::before {
     background-image: url(../img/gmail.png);
-    background-size: cover;
-    margin-right: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    min-height: 22px;
-    min-width: 22px;
-    max-width: 22px;
-    max-height: 22px;
-
 }
 
 .linkedin::before {
-    content: "";
     background-image: url(../img/linkedin.png);
-    background-size: cover;
-    margin-right: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    min-height: 22px;
-    min-width: 22px;
-    max-width: 22px;
-    max-height: 22px;
 }
 
 .vk::before {
-    content: "";
     background-image: url(../img/vk.png);
-    background-size: cover;
-    margin-right: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    min-height: 22px;
-    min-width: 22px;
-    max-width: 22px;
-    max-height: 22px;
 }
 
 .github::before {
-    content: "";
     background-image: url(../img/git.png);
-    background-size: cover;
-    margin-right: 5px;
-    display: inline-block;
-    vertical-align: middle;
-    min-height: 22px;
-    min-width: 22px;
-    max-width: 22px;
-    max-height: 22px;
 }
 
 @media screen and (max-width: 799px) {

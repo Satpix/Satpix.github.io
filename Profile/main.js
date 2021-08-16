@@ -9,11 +9,11 @@
     let projects=(a)=>{
         for(let i = 0;i<arr.length;i++){
             if(a==arr[i]){
-                arr[i].style.color = '#1293AD';
+                arr[i].style.color = '#403B4A';
                 arr[i].style.background = 'white';
                 arr2[i].style.display = 'block';
             }else{
-                arr[i].style.background = "linear-gradient(90deg,#05325D, #40e0f2)";
+                arr[i].style.background = "linear-gradient(230deg, #403B4A, #86c8dd)";
                 arr[i].style.color = 'white';
                 arr2[i].style.display = 'none';
             }
