@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    font-family: "Quicksand",sans-serif;
+}
+.fon{
+    /*background-color: white;*/
+    background-image: url("fon.png");
+    height:100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    font-size: 80px;
+    color: #1b9b21;
+    font-weight: 700;
+}
+.button{
+    width:75px;
+    height: 75px;
+    border:1px solid black;
+}
