@@ -1,9 +1,9 @@
     let arr=[];
     let arr2=[];
-    for (let i = 0; i < 4; i++){
+    for (let i = 0; i < 6; i++){
         arr[i]=document.getElementById('button'+(i+1));
     }
-    for (let i = 0; i < 4; i++){
+    for (let i = 0; i < 6; i++){
         arr2[i]=document.getElementById('project'+(i+1));
     }
     let projects=(a)=>{

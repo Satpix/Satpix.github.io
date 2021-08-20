@@ -38,16 +38,17 @@ a {
     position: relative;
     background-color: white;
     border-radius: 10px 0 0 10px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     margin-bottom: 10px;
-    margin-left:-15px;
+    margin-left: -15px;
+    margin-right: -2px;
 }
 
 .block2 {
     position: relative;
     background-color: white;
     padding-right: 15px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     border-radius: 0px 10px 10px 0px;
     margin-bottom: 10px;
 }
@@ -118,7 +119,7 @@ a {
     color: white;
     padding: 5px 5px 5px 20px;
     background: var(--color-one);
-    margin: 50px 0 10px -5px;
+    margin: 50px 0 10px 0;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #403B4A;
 }
@@ -132,8 +133,9 @@ a {
 
 .text_button {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0 -10px 0 -10px;
 }
 
 .buttons {
@@ -143,7 +145,7 @@ a {
     background: var(--color-one);
     color: white;
     box-shadow: 1px 1px 5px #403B4A;
-    margin: 10px 5px 0px 0px;
+    margin: 10px 10px 0px 10px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
     font-size: 30px;
     border-radius: 3px;
@@ -165,21 +167,31 @@ a {
 }
 
 #project1 {
-    background-image: url(../img/Museum.png);
+    background-image: url(../img/Pianokit.png);
     display: none;
 }
 
 #project2 {
-    background-image: url(../img/Meteorite.png);
+    background-image: url(../img/Tags.png);
     display: none;
 }
 
 #project3 {
-    background-image: url(../img/TicTacToe.png);
+    background-image: url(../img/Museum.png);
     display: none;
 }
 
 #project4 {
+    background-image: url(../img/Meteorite.png);
+    display: none;
+}
+
+#project5 {
+    background-image: url(../img/TicTacToe.png);
+    display: none;
+}
+
+#project6 {
     background-image: url(../img/Photoeditor.png);
     display: none;
 }
@@ -230,6 +242,9 @@ a {
     .buttons {
         font-size: 10px;
         padding: 10px;
+    }
+    .title {
+        font-size: 30px;
     }
 }
 
